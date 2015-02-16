@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        
+
+	<report
+    	id="debitcredit_print"
+    	model="debit.credit"
+    	string="print check"
+   	 report_type="qweb-pdf"
+    	name="debitcredit_print"
+   	 file="debitcredit_print"
+        attachment="(object.state in ('finish'))"
+/>
+
+
+    </data>
+</openerp>

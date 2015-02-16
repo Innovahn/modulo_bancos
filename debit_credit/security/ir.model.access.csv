@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_debitcredit,debit.credit,model_debit_credit,group_debit_credit,1,1,1,1
+access_debitcredit_lines,debitcredit_lines,model_debitcredit_lines,group_debit_credit,1,1,1,1
+access_account_move_line,account.account_move_line,model_account_move_line,group_debit_credit,1,1,1,1
+access_account_journal,account.journal,model_account_journal,group_debit_credit,1,1,1,1

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+		<!-- Tree View-->
+		<record model="ir.ui.view" id="view_conf_banks_tree">
+		    <field name="name">banks.tree</field>
+		    <field name="model">conf.banks</field>
+		    <field name="arch" type="xml">
+		        <tree string="Banks ....">  
+				<field name="name" />               
+		        </tree>
+		    </field>
+		</record>
+		<!-- Form view -->			   
+
+		<record model="ir.ui.view" id="view_conf_banks_form">
+			<field name="name">banks.form</field>
+			<field name="model">conf.banks</field>
+			<field name="arch" type="xml">
+				<form string="Banks">
+				<sheet>
+					<group>
+					<field name="name" />
+					</group>
+				</sheet>
+				</form>	
+			</field>		
+		</record>
+		
+
+		<record model="ir.actions.act_window" id="conf_banks_action_tree" >
+				<field name="name">Banks</field>
+				<field name="res_model">conf.banks</field>
+				<field name="view_type">form</field>
+				<field name="view_mode">tree,form</field>
+				<!--<field name="context">{}</field>
+				<field name="domain">[]</field>
+				
+				<field name="view_id" eval="False"/>            -->
+				<field name="help" type="html">
+					  <p class="oe_view_nocontent_create">
+						Click to add a new Bank.
+					  </p>
+				  	  <p>
+						....
+				  	 </p>
+				</field>
+		</record>  
+
+		<menuitem id="config_bank" parent="account.menu_finance_configuration" name="Banks and Savings banks" sequence="1"/>
+		<menuitem id="create_bank" parent="config_bank" name="Create Banks" sequence="10" action="conf_banks_action_tree"/>
+		<menuitem id="create_checkbook" parent="config_bank" name="Create Checkbooks" sequence="20" action=""/>
+		
+
+
+
+    </data>
+</openerp>

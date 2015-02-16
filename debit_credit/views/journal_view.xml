@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+<record model="ir.ui.view" id="view_pos_account_journal_form1">
+    <field name="name">account.journal.form.inherit3</field>
+    <field name="model">account.journal</field>
+    <field name="inherit_id" ref="account.view_account_journal_form"/>
+    <field name="arch" type="xml">
+	<field name="type" position="after">
+	   <field name="show_sequence" string="Show sequences"/>
+	</field>
+
+	<field name="allow_date" position="after">
+	    <field name="checkmiscelaneous_creditdebit" attrs="{'invisible' : [('type', 'not in', ['bank'])] }"/>
+	   
+	</field>
+	
+
+	<field name="sequence_id" position="attributes">
+      		<attribute name="invisible">1</attribute>
+		 
+      	</field>
+	<xpath expr="//page[@string='Cash Registers']" position="after">
+		<page string="Banks" attrs="{'invisible': [('show_sequence','not in',True)]}" >
+				<group >
+				    <field name="sequence_id" string="Sequence of Check"/>
+				    <field name="sequence_id_transfer" />
+				    <field name="sequence_id_credeb" />
+				    <field name="sequence_id_deposit" />	 
+				</group>
+		</page>
+	</xpath>
+
+    </field>
+</record>
+    </data>
+</openerp>

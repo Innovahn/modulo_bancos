@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+		<!-- Tree View-->
+		<record model="ir.ui.view" id="view_checkbook_tree">
+		    <field name="name">Checkbooks</field>
+		    <field name="model">checkbooks</field>
+		    <field name="arch" type="xml">
+		        <tree string="Checkbooks">  
+				<field name="name" />
+				<field name="bank" /> 
+				<field name="currency" />
+				<field name="account" /> 
+				<field name="journal" />        
+		        </tree>
+		    </field>
+		</record>
+		
+		<!-- Form view -->			   
+
+		<record model="ir.ui.view" id="view_checkbooks_form">
+			<field name="name">Checkbooks</field>
+			<field name="model">checkbooks</field>
+			<field name="arch" type="xml">
+				<form string="Checkbooks">
+				<sheet>
+				   <group>	
+					<group >
+					   <field name="name" />
+					   <field name="bank" /> 
+					</group>
+					<group >
+					   <field name="currency" />
+					   <field name="account" />
+					
+					</group>
+				   </group>
+					<notebook>
+						<page string="Journals">
+							<group>
+							<field name="journal" string="Journal of Checkbook" on_change="onchange_journal(journal,account)" />
+							</group>
+						</page>
+					</notebook>
+
+				</sheet>
+				</form>	
+			</field>		
+		</record>
+		
+
+		<record model="ir.actions.act_window" id="checkbooks_action" >
+				<field name="name">checkbooks</field>
+				<field name="res_model">checkbooks</field>
+				<field name="view_type">tree</field>
+				<field name="view_mode">tree,form</field>
+				<!--<field name="context">{}</field>  DESDE ACA
+				<field name="domain">[]</field>
+				
+				<field name="view_id" eval="False"/>       HASTA ACA     -->
+				<field name="help" type="html">
+					  <p class="oe_view_nocontent_create">
+						Click to add a new Checkbook.
+					  </p>
+				  	  <p>
+						....
+				  	  </p>
+				</field>
+		</record>  
+
+		<menuitem id="checkbooks" parent="config_bank" name="Create Checkbooks" action="checkbooks_action" sequence="15"/>
+
+    </data>
+</openerp>

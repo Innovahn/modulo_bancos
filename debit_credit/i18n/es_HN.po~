@@ -1,0 +1,423 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* debit_credit
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-13 15:36+0000\n"
+"PO-Revision-Date: 2015-02-13 15:36+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: debit_credit
+#: help:debit.credit,state:0
+msgid " * The 'Draft' status is used when a user is encoding a new and unconfirmed Voucher. 		                \n"
+"* The 'Pro-forma' when voucher is in Pro-forma status,voucher does not have an voucher number. 		                \n"
+"* The 'Posted' status is used when user create voucher,a voucher number is generated and voucher entries are created in account 		                \n"
+"* The 'Cancelled' status is used when user cancel voucher."
+msgstr " * The 'Draft' status is used when a user is encoding a new and unconfirmed Voucher.                 * The 'Pro-forma' when voucher is in Pro-forma status,voucher does not have an voucher number.                 * The 'Posted' status is used when user create voucher,a voucher number is generated and voucher entries are created in account                 * The 'Cancelled' status is used when user cancel voucher."
+
+#. module: debit_credit
+#: model:ir.actions.act_window,help:debit_credit.debitcredit_action_form
+msgid "<p class=\"oe_view_nocontent_create\">\n"
+"					Click to add a new check.\n"
+"				  </p>\n"
+"				  <p>\n"
+"					With just a quick glance on the Odoo mcheck screen, you\n"
+"					can easily find all the information about your each day check;					\n"
+"				  </p>\n"
+"				"
+msgstr "<p class=\"oe_view_nocontent_create\">Click to add a new check.  </p>  <p>With just a quick glance on the Odoo mcheck screen, youcan easily find all the information about your each day check;  </p>"
+
+#. module: debit_credit
+#: field:debitcredit_lines,account_id:0
+msgid "Account"
+msgstr "Cuenta"
+
+#. module: debit_credit
+#: field:debit.credit,move_id:0
+msgid "Account Entry"
+msgstr "Account Entry"
+
+#. module: debit_credit
+#: view:debit.credit:debit_credit.view_mcheck_form
+msgid "Accounting Voucher"
+msgstr "Accounting Voucher"
+
+#. module: debit_credit
+#: model:res.groups,name:debit_credit.group_debit_credit
+msgid "Allow Debit and Credit checks"
+msgstr "Permitir cheques de Débito y Crédito"
+
+#. module: debit_credit
+#: field:debitcredit_lines,amount:0
+msgid "Amount"
+msgstr "Monto"
+
+#. module: debit_credit
+#: view:debit.credit:debit_credit.view_mcheck_form
+msgid "Are you sure you want to unreconcile this record?"
+msgstr "?Esta seguro que desea reconciliar este registro?"
+
+#. module: debit_credit
+#: view:account.journal:debit_credit.view_pos_account_journal_form1
+msgid "Banks"
+msgstr "Banks"
+
+#. module: debit_credit
+#: view:website:debit_credit.mcheck_print
+msgid "CHEQUE #"
+msgstr "CHEQUE #"
+
+#. module: debit_credit
+#: view:debit.credit:debit_credit.view_mcheck_form
+msgid "Cancel Voucher"
+msgstr "Cancelar Cheque"
+
+#. module: debit_credit
+#: selection:debit.credit,state:0
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: debit_credit
+#: field:account.journal,checkmiscelaneous_creditdebit:0
+msgid "Checks Debit and Credit"
+msgstr "Checks Debit and Credit"
+
+#. module: debit_credit
+#: code:addons/debit_credit/model/mcheck.py:51
+#: code:addons/debit_credit/model/mcheck.py:56
+#, python-format
+msgid "Configuration Error !"
+msgstr "Configuration Error !"
+
+#. module: debit_credit
+#: field:debit.credit,create_uid:0
+#: field:debitcredit_lines,create_uid:0
+msgid "Created by"
+msgstr "Creadp por"
+
+#. module: debit_credit
+#: field:debit.credit,create_date:0
+#: field:debitcredit_lines,create_date:0
+msgid "Created on"
+msgstr "Created on"
+
+#. module: debit_credit
+#: view:debit.credit:debit_credit.view_mcheck_form
+#: selection:debit.credit,type_dc:0
+#: selection:debitcredit_lines,type:0
+msgid "Credit"
+msgstr "Crédito"
+
+#. module: debit_credit
+#: view:website:debit_credit.mcheck_print
+msgid "Cuenta"
+msgstr "Cuenta"
+
+#. module: debit_credit
+#: field:debit.credit,date:0
+msgid "Date"
+msgstr "Fecha"
+
+#. module: debit_credit
+#: view:website:debit_credit.mcheck_print
+msgid "Debe"
+msgstr "Debe"
+
+#. module: debit_credit
+#: view:debit.credit:debit_credit.view_mcheck_form
+#: selection:debit.credit,type_dc:0
+#: selection:debitcredit_lines,type:0
+msgid "Debit"
+msgstr "Débito"
+
+#. module: debit_credit
+#: model:ir.actions.act_window,name:debit_credit.debitcredit_action_form
+#: model:ir.ui.menu,name:debit_credit.mcheck_mcheck
+msgid "Debit and Credit"
+msgstr "Débito y Crédito"
+
+#. module: debit_credit
+#: view:debit.credit:debit_credit.view_mcheck_tree
+msgid "Debit and Credit checks"
+msgstr "Cheques de débito y crédito"
+
+#. module: debit_credit
+#: field:debit.credit,type:0
+msgid "Default Type"
+msgstr "Default Type"
+
+#. module: debit_credit
+#: field:debitcredit_lines,name:0
+msgid "Description"
+msgstr "Descripción"
+
+#. module: debit_credit
+#: view:website:debit_credit.mcheck_print
+msgid "Detalle"
+msgstr "Detalle"
+
+#. module: debit_credit
+#: view:website:debit_credit.external_layout_cierre
+msgid "Dirección:"
+msgstr "Dirección:"
+
+#. module: debit_credit
+#: field:debit.credit,type_dc:0
+#: field:debitcredit_lines,type:0
+msgid "Dr/Cr"
+msgstr "Dr/Cr"
+
+#. module: debit_credit
+#: selection:debit.credit,state:0
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: debit_credit
+#: help:debit.credit,date:0
+msgid "Effective date for accounting entries"
+msgstr "Effective date for accounting entries"
+
+#. module: debit_credit
+#: view:website:debit_credit.mcheck_print
+msgid "Firma Autorizada"
+msgstr "Firma Autorizada"
+
+#. module: debit_credit
+#: view:website:debit_credit.mcheck_print
+msgid "Haber"
+msgstr "Haber"
+
+#. module: debit_credit
+#: field:debit.credit,id:0
+#: field:debitcredit_lines,id:0
+#: field:report.debitcredit_print,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: debit_credit
+#: field:debit.credit,journal_id:0
+#: model:ir.model,name:debit_credit.model_account_journal
+msgid "Journal"
+msgstr "Chequera"
+
+#. module: debit_credit
+#: view:debit.credit:debit_credit.view_mcheck_form
+#: model:ir.model,name:debit_credit.model_account_move_line
+msgid "Journal Items"
+msgstr "Apuntes contables"
+
+#. module: debit_credit
+#: view:website:debit_credit.mcheck_print
+msgid "La suma de"
+msgstr "La suma de"
+
+#. module: debit_credit
+#: field:debit.credit,write_uid:0
+#: field:debitcredit_lines,write_uid:0
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: debit_credit
+#: field:debit.credit,write_date:0
+#: field:debitcredit_lines,write_date:0
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: debit_credit
+#: field:debit.credit,name:0
+msgid "Memo"
+msgstr "Memo"
+
+#. module: debit_credit
+#: code:addons/debit_credit/model/mcheck.py:140
+#, python-format
+msgid "No lines"
+msgstr "No lines"
+
+#. module: debit_credit
+#: field:debit.credit,number:0
+msgid "Number"
+msgstr "Numero"
+
+#. module: debit_credit
+#: view:website:debit_credit.mcheck_print
+msgid "Paguese a"
+msgstr "Paguese a"
+
+#. module: debit_credit
+#: field:debit.credit,reference:0
+msgid "Pay to"
+msgstr "Descripción"
+
+#. module: debit_credit
+#: selection:debit.credit,type:0
+msgid "Payment"
+msgstr "Payment"
+
+#. module: debit_credit
+#: code:addons/debit_credit/model/mcheck.py:51
+#, python-format
+msgid "Please activate the sequence of selected journal !"
+msgstr "Please activate the sequence of selected journal !"
+
+#. module: debit_credit
+#: code:addons/debit_credit/model/mcheck.py:56
+#, python-format
+msgid "Please select the sequence of selected journal !"
+msgstr "Please select the sequence of selected journal !"
+
+#. module: debit_credit
+#: selection:debit.credit,state:0
+msgid "Posted"
+msgstr "Contabilizado"
+
+#. module: debit_credit
+#: selection:debit.credit,state:0
+msgid "Pro-forma"
+msgstr "Pro-forma"
+
+#. module: debit_credit
+#: selection:debit.credit,type:0
+msgid "Purchase"
+msgstr "Purchase"
+
+#. module: debit_credit
+#: view:website:debit_credit.external_layout_cierre
+msgid "RTN:"
+msgstr "RTN:"
+
+#. module: debit_credit
+#: selection:debit.credit,type:0
+msgid "Receipt"
+msgstr "Receipt"
+
+#. module: debit_credit
+#: selection:debit.credit,type:0
+msgid "Sale"
+msgstr "Sale"
+
+#. module: debit_credit
+#: view:account.journal:debit_credit.view_pos_account_journal_form1
+msgid "Sequence of Check"
+msgstr "Sequence of Check"
+
+#. module: debit_credit
+#: field:account.journal,sequence_id_credeb:0
+msgid "Sequence of Debit and Credit"
+msgstr "Sequence of Debit and Credit"
+
+#. module: debit_credit
+#: field:account.journal,sequence_id_transfer:0
+msgid "Sequence of Transfer"
+msgstr "Sequence of Transfer"
+
+#. module: debit_credit
+#: view:account.journal:debit_credit.view_pos_account_journal_form1
+msgid "Show sequences"
+msgstr "Show sequences"
+
+#. module: debit_credit
+#: field:account.journal,show_sequence:0
+msgid "Show the sequences"
+msgstr "Show the sequences"
+
+#. module: debit_credit
+#: field:debit.credit,state:0
+msgid "Status"
+msgstr "Status"
+
+#. module: debit_credit
+#: field:debit.credit,tax_amount:0
+msgid "Tax Amount"
+msgstr "Tax Amount"
+
+#. module: debit_credit
+#: view:website:debit_credit.external_layout_cierre
+msgid "Tel:"
+msgstr "Tel:"
+
+#. module: debit_credit
+#: field:debit.credit,amount:0
+#: field:debit.credit,amountcredit:0
+#: field:debit.credit,amountdebit:0
+#: field:debit.credit,amounttext:0
+msgid "Total"
+msgstr "Total"
+
+#. module: debit_credit
+#: view:debit.credit:debit_credit.view_mcheck_form
+msgid "Total Amount"
+msgstr "Total Amount"
+
+#. module: debit_credit
+#: help:debit.credit,reference:0
+msgid "Transaction reference number."
+msgstr "Transaction reference number."
+
+#. module: debit_credit
+#: view:debit.credit:debit_credit.view_mcheck_form
+msgid "Validate"
+msgstr "Validate"
+
+#. module: debit_credit
+#: view:debit.credit:debit_credit.view_mcheck_form
+msgid "Voucher Entry"
+msgstr "Comprobante"
+
+#. module: debit_credit
+#: code:addons/debit_credit/model/mcheck.py:138
+#, python-format
+msgid "amount total is 0"
+msgstr "monto total es 0"
+
+#. module: debit_credit
+#: field:debit.credit,mcheck_ids:0
+#: field:debit.credit,move_ids:0
+msgid "checks lines"
+msgstr "checks lines"
+
+#. module: debit_credit
+#: field:debitcredit_lines,debitcredit_id:0
+msgid "debit credit"
+msgstr "debit credit"
+
+#. module: debit_credit
+#: field:account.move.line,debitcredit_id:0
+msgid "mcheck"
+msgstr "mcheck"
+
+#. module: debit_credit
+#: view:debit.credit:debit_credit.view_mcheck_form
+msgid "miscellaneous checks"
+msgstr "miscellaneous checks"
+
+#. module: debit_credit
+#: field:debit.credit,obs:0
+msgid "obs"
+msgstr "obs"
+
+#. module: debit_credit
+#: model:ir.actions.report.xml,name:debit_credit.debitcredit_print
+msgid "print check"
+msgstr "Imprimir Cheque"
+
+#. module: debit_credit
+#: code:addons/debit_credit/model/mcheck.py:140
+#, python-format
+msgid "select more than one line"
+msgstr "select more than one line"
+
+#. module: debit_credit
+#: code:addons/debit_credit/model/mcheck.py:138
+#, python-format
+msgid "the value of total is 0"
+msgstr "the value of total is 0"
+

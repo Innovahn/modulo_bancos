@@ -1,0 +1,10 @@
+from openerp.osv import fields, osv
+
+
+class voucher_inh(osv.osv):
+	_inherit="account.voucher"
+	
+	_columns={
+	'deposit_id':fields.many2one('deposit','deposit_id')
+
+	}

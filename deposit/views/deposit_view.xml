@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+		<record id="deposit_action_form" model="ir.actions.act_window">
+				<field name="name">Deposit</field>
+				<field name="res_model">deposit</field>
+				<field name="view_type">form</field>
+				<field name="view_mode">tree,form</field>
+				<field name="domain">[]</field>
+				<field name="context">{}</field>
+				<field name="view_id" eval="False"/>            
+				<field name="help" type="html">
+				  <p class="oe_view_nocontent_create">
+					Click to add a new Deposit.
+				  </p>
+				  <p>
+					...
+				  </p>
+				</field>
+		</record>
+
+    <menuitem action="deposit_action_form" name="Deposit" id="deposit" parent="account.menu_finance_bank_and_cash" sequence="26" />	
+
+		<!-- Tree View-->
+		<record model="ir.ui.view" id="view_deposit_tree">
+		    <field name="name">Deposits</field>
+		    <field name="model">deposit</field>
+		    <field name="arch" type="xml">
+		        <tree string="Deposit">  
+				<field name="journal" />
+				
+				<field name="description" />
+				<field name="number" />
+				<field name="date" /> 
+				<field name="amount" />        
+		        </tree>
+		    </field>
+		</record>
+
+		<!-- Form view -->			   
+
+		<record model="ir.ui.view" id="view_deposit_form">
+			<field name="name">Deposit</field>
+			<field name="model">deposit</field>
+			<field name="arch" type="xml">
+				<form string="Deposit">
+				<header>
+			
+                      		   <field name="state" widget="statusbar" statusbar_visible="draft,posted" statusbar_colors='{"draft":"blue"}'/>
+                  		</header>
+				<sheet>	
+					<group col="4" colspan="4">
+					   <field name="journal" on_change="load_voucher(journal)" />
+					
+					   <field name="description" />
+					   <field name="number" />
+					</group>
+					<group col="4" colspan="2">
+					   
+					   <field name="date" />
+					   <field name="amount" />
+					</group>
+				
+				<notebook>
+					<page string="Customer Pays">
+					   <field name="pays"  context="{'journal':journal }" >
+						<tree string="">
+							<field name="name"/>
+							<field name="reference"/>
+							<field name="company_id"/>
+							<field name="partner_id"/>
+							<field name="amount"/>	
+							<field name="journal_id"/>
+							<field name="state"/>
+						</tree>
+					   </field>
+					</page>
+					<page></page>
+					<page></page>
+				</notebook>
+				</sheet>
+				</form>
+			</field>
+		</record>
+   </data>
+</openerp>
